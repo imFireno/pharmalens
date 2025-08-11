@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "emmet.includeLanguages": {
+  "javascript": "javascriptreact",
+  "html": "html",
+  "vue": "html",
+  "plaintext": "html"
+}
+}

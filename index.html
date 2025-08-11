@@ -1,0 +1,224 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/pharmalens.png" type="image/x-icon">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Jonsuh Hamburger -->
+  <link rel="stylesheet" href="./src/hamburgers.css">
+
+  <!-- Animate Style -->
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- AOS (Animate on Scroll) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet"href="./src/input.css" >
+  <link rel="stylesheet"href="./src/output.css" >
+  <title>Pharmalens</title>
+</head>
+<body class="overflow-x-hidden bg-green-900">
+  <!-- Navbar -->
+  <div id="navbar" class="navbar px-4 py-1 sticky top-0 text-green-900 bg-white z-50">
+    <!-- Dynamic navbar will be loaded here -->
+  </div>
+
+  <!-- Beranda -->
+  <div class="header h-auto flex items-center bg-slate-100 md:mx-32 md:my-8 md:rounded-3xl md:py-0 py-2 rounded-b-[70px] scroll-mt-24" id="beranda">
+    <div class="container mx-auto px-5">
+      <div class="header-box flex lg:flex-row flex-col items-center gap-1">
+        <div class="box lg:w-1/2 lg:order-1 order-2 lg:text-left text-center px-14">
+          <h1 class="font-extrabold md:text-4xl sm:text-3xl text-2xl text-slate-900 mb-4 animate__animated animate__fadeInUp animate__delay-1s">Cerdas Mengenal Obat, Bijak Menggunakannya</h1>
+          <p class="mb-4 text-slate-600 md:text-base text-sm animate__animated animate__fadeInUp animate__delay-1s leading-loose">Cukup scan obat, dan temukan informasi lengkap tentang indikasi obat. Karena hidup sehat dimulai dari pengetahuan yang benar.</p>
+          <a href="#tentang" class="md:w-48 w-44 p-3 sm:mb-6 mb-7 mt-4 bg-green-800 rounded-xl flex items-center justify-center cursor-pointer font-bold text-green-100 hover:bg-green-900 md:mx-0 mx-auto animate__animated animate__fadeInUp animate__delay-1s">Tentang Kami</a>
+        </div>
+        <div class="box lg:w-1/2 lg:order-2 order-1 lg:pt-0 pt-2">
+          <img src="./img/hero.png" alt="undraw.co" class="xl:w-[450px] lg:w-[400px] md:w-[300px] sm:w-[250px] w-[200px] block ml-auto animate__animated animate__fadeInUp animate__delay-1s">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tentang -->
+   <div class="about md:py-24 py-16" id="tentang">
+    <div class="container mx-auto py-4">
+      <div class="about-box">
+        <div class="box text-center">
+          <h1 class="font-extrabold text-slate-100 md:text-4xl sm:text-3xl text-2xl mb-8" data-aos="fade-up" data-aos-durations="1000">Tentang Kami</h1>
+          <p class="text-slate-100 px-6 lg:w-3/4 w-full mx-auto leading-loose" data-aos="fade-up" data-aos-durations="1000" data-aos-delay="200">Pharmalens adalah platform berbasis AI yang membantu Anda memahami
+          obat-obatan dengan lebih mudah. Cukup dengan memindai kemasan obat,
+          Anda akan mendapatkan informasi mengenai indikasi dan efek sampingnya
+          secara instan.</p>
+        </div>
+        <div class="box pt-10">
+          <img src="./img/about.svg" alt="storyset.com" class="md:w-[550px] sm:w-[300px] w-[200px] mx-auto">
+        </div>
+      </div>
+    </div>
+   </div>
+  <!-- Tentang -->
+
+  <!-- Fitur -->
+   <div class="service scroll-mt-24" id="fitur">
+    <div class="container mx-auto md:my-24 my-20 px-4">
+      <div class="service box">
+        <div class="box text-center">
+          <h1 class="font-extrabold md:text-4xl sm:text-3xl text-2xl  text-slate-100 mb-6" data-aos="fade-up" data-aos-durations="1000">Fitur Unggulan Kami</h1>
+          <p class="md:w-3/4 text-slate-100 w-full mx-auto leading-loose" data-aos="fade-up" data-aos-durations="1000" data-aos-delay="200">Kami hadir untuk memudahkan Anda dalam memahami obat yang dikonsumsi. Dengan fitur-fitur berikut, dapatkan informasi obat dengan cepat dan praktis</p>
+        </div>
+        <div class="box flex items-center justify-center gap-10 flex-wrap pt-12">
+            <div class="p-5 flex flex-col justify-center items-center md:w-[270px] w-[250px] md:h-[270px] h-[250px] bg-slate-100 text-center rounded-2xl  transform hover:-translate-y-4 transition duration-500" style="box-shadow: 17px 15px 0px -6px rgba(234, 239, 157, 0.75);">
+
+              <i class="fa-solid fa-camera text-4xl text-green-800 mb-5"></i>
+              <h1 class="md:text-2xl text-xl font-bold mb-2">Pindai Obat</h1>
+              <p class="md:text-md text-sm">Ambil foto kemasan atau label obat untuk mulai mengenali informasi penting seputar produk tersebut secara instan.</p>
+            </div>
+            <div class="p-5 flex flex-col justify-center items-center md:w-[270px] w-[250px] md:h-[270px] h-[250px] bg-slate-100 text-center rounded-2xl transform hover:-translate-y-4 transition duration-500" style="box-shadow: 17px 15px 0px -6px rgba(234, 239, 157, 0.75);">
+
+              <i class="fa-solid fa-search text-4xl text-green-800 mb-5"></i>
+              <h1 class="md:text-2xl text-xl font-bold mb-2">Lihat Indikasi</h1>
+              <p class="md:text-md text-sm">Temukan kegunaan, cara kerja, dan manfaat dari obat yang Anda konsumsi hanya dalam beberapa detik.</p>
+            </div>
+            <div class="p-5 flex flex-col justify-center items-center md:w-[270px] w-[250px] md:h-[270px] h-[250px] bg-slate-100 text-center rounded-2xl transform hover:-translate-y-4 transition duration-500" style="box-shadow: 17px 15px 0px -6px rgba(234, 239, 157, 0.75)">
+              <i class="fa-solid fa-file-medical text-4xl text-green-800 mb-5"></i>
+              <h1 class="md:text-2xl text-xl font-bold mb-2">Cek Riwayat</h1>
+              <p class="md:text-md text-sm">Riwayat pemindaian Anda tersimpan otomatis, memudahkan untuk mengecek kembali obat yang pernah Anda telusuri.</p>
+            </div>
+      </div>
+    </div>
+   </div>
+  <!-- Fitur -->
+
+  <!-- Scan -->
+  <div class="scan flex items-center md:mx-32 md:my-20 md:rounded-3xl md:py-36 py-20 rounded-b-[70px]">
+    <div class="scan mx-auto px-4">
+      <div class="scan-box flex lg:flex-row flex-col items-center gap-1">
+        <div class="box lg:w-1/2 lg:order-1 order-2 lg:text-left text-center px-[10px]">
+          <h1 class="font-extrabold text-slate-100 md:text-4xl sm:text-3xl text-xl mb-6" data-aos="fade-up" data-aos-duration="1000">Coba Sekarang, Lebih Mudah Kenali Obat Anda!</h1>
+          <p class="text-slate-100 leading-loose mb-8" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Temukan manfaat fitur kami secara langsung. Cukup unggah foto label obat dan dapatkan informasi penting seketika. Praktis, cepat, dan gratis!</p>
+          <a href="#scan" class="md:w-48 w-44 md:h-12 h-11 sm:mb-6 mb-7 mt-4 p-4 bg-green-100 rounded-xl font-bold text-green-800 hover:bg-green-200 animate__animated animate__fadeInUp animate__delay-1s">Coba Sekarang</a>    
+        </div> 
+        <div class="box lg:w-1/2 lg:order-2 order-1 lg:pt-0 pt-2">
+          <img src="./img/pharmacist.svg" alt="undraw.co" class="xl:w-[450px] lg:w-[400px] md:w-[300px] w-[250px] block ml-auto animate__animated animate__fadeInUp animate__delay-1s">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action Section -->
+  <div class="cta-section my-14 md:py-18 sm:py-8 py-7 md:px-28 sm:px-9 px-4 h-auto scroll-mt-20" id="scan">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h1 class="md:text-4xl text-3xl font-bold text-slate-100 mb-6">
+          Mulai Scan Obat Anda
+        </h1>
+        <p class="text-slate-200 text-lg leading-relaxed max-w-3xl mx-auto">
+          Gunakan teknologi OCR dan AI terdepan untuk mendapatkan informasi lengkap tentang obat Anda. 
+          Cukup upload gambar kemasan obat dan dapatkan analisis detail dalam hitungan detik.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <!-- Scan CTA -->
+        <div class="bg-gradient-to-br from-green-100 to-green-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-camera text-3xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-green-800 mb-4">Scan Medicine</h3>
+            <p class="text-green-700 mb-6 leading-relaxed">
+              Upload gambar obat dan dapatkan informasi detail dengan teknologi OCR dan AI
+            </p>
+            <a href="/scan" id="scanCTA" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-xl transition-colors transform hover:scale-105">
+              <i class="fas fa-camera mr-2"></i>Mulai Scan
+            </a>
+          </div>
+        </div>
+
+        <!-- History CTA -->
+        <div class="bg-gradient-to-br from-blue-100 to-blue-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+          <div class="text-center">
+            <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <i class="fas fa-history text-3xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-blue-800 mb-4">Scan History</h3>
+            <p class="text-blue-700 mb-6 leading-relaxed">
+              Lihat riwayat semua scan obat yang pernah Anda lakukan sebelumnya
+            </p>
+            <a href="/history" id="historyCTA" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-colors transform hover:scale-105">
+              <i class="fas fa-history mr-2"></i>Lihat Riwayat
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Login Notice -->
+      <div id="loginNotice" class="text-center mt-8 hidden">
+        <div class="bg-yellow-100 border border-yellow-300 rounded-lg p-4 max-w-md mx-auto">
+          <p class="text-yellow-800">
+            <i class="fas fa-info-circle mr-2"></i>
+            Silakan login terlebih dahulu untuk menggunakan fitur scan dan melihat riwayat
+          </p>
+          <a href="/login" class="inline-block mt-3 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+            <i class="fas fa-sign-in-alt mr-2"></i>Login Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Scan -->
+
+
+  
+  <!-- Footer -->
+    <div class="footer py-7 bg-green-100 text-green-900 bottom-0">
+        <div class="container mx-auto px-4">
+            <div class="footer-box flex justify-center items-center flex-col gap-5">
+                <div class="box lg:w-[500px]">
+                    <div class="logo flex justify-center items-center gap-2">
+                        <img src="./img/pharmalens.png" alt="flaticon.com" class="md:w-12 w-9" />
+                        <h1 class="font-bold md:text-xl text-sm">Pharmalens</h1>
+                    </div>
+                </div>
+                <div class="box flex items-center justify-center lg:w-[80px] w-[60px] md:gap-10 gap-2 font-bold md:text-[15px] text-[10px]">
+                    <a href="#beranda" class="opacity-70 hover:opacity-100">Beranda</a>
+                    <a href="#tentang" class="opacity-70 hover:opacity-100">Tentang</a>
+                    <a href="#fitur" class="opacity-70 hover:opacity-100">Fitur</a>
+                    <a href="#scan" class="opacity-70 hover:opacity-100">Scan</a>
+                    <a href="#riwayat" class="opacity-70 hover:opacity-100">Riwayat</a>
+                </div>
+                <hr class="w-full border-t-1 border-green-900" />
+                <p class="text-xs">&copy; 2025 Pharmalens | All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+  <!-- Footer -->
+
+
+  <!-- JS -->
+  <script src="./js/script.js"></script>
+  
+  <!-- JS AOS (Animate on Screen) -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/homepage.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
