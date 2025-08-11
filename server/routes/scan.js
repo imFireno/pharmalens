@@ -108,9 +108,18 @@ router.post('/', authenticateToken, async (req, res) => {
         // Save to database
         const db = new sqlite3.Database(DB_PATH);
         
+        // Use scan_date from frontend (WIB) if provided, else use server time
+        let scanDate = null;
+        if (req.body && req.body.scan_date) {
+            scanDate = req.body.scan_date;
+        } else if (req.body && req.body instanceof Object && req.body.get && req.body.get('scan_date')) {
+            scanDate = req.body.get('scan_date');
+        } else {
+            scanDate = new Date().toISOString();
+        }
         db.run(
-            'INSERT INTO scan_history (user_id, image_filename, ocr_result, ai_analysis) VALUES (?, ?, ?, ?)',
-            [req.user.id, filename, ocrResult, aiAnalysis],
+            'INSERT INTO scan_history (user_id, image_filename, ocr_result, ai_analysis, scan_date) VALUES (?, ?, ?, ?, ?)',
+            [req.user.id, filename, ocrResult, aiAnalysis, scanDate],
             function(err) {
                 db.close();
                 

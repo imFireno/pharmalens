@@ -148,6 +148,10 @@ class ScanPage {
         try {
             const formData = new FormData();
             formData.append('image', file);
+            // Add scan_date in WIB (Asia/Jakarta) timezone
+            const nowJakarta = new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+            const isoJakarta = new Date(nowJakarta).toISOString();
+            formData.append('scan_date', isoJakarta);
 
             const response = await fetch('/api/scan', {
                 method: 'POST',
